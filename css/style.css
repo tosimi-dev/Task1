@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(6, 6, 66);
+    padding-top: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.login {
+    background-color: rgb(6, 6, 66);
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.join-us {
+    background-color: rgb(35, 156, 232);
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+.hero-text > p {
+    color:  rgb(35, 156, 232);
+}
+
+.hero-text > h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.hero-text > h5 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.quotes {
+    background-color:  rgb(35, 156, 232);
+    color: white;
+    width: 150px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.learn {
+    color:  rgb(35, 156, 232);
+    width: 150px;
+    height: 30px;
+    background-color: rgb(6, 6, 66);
+    border: 1px  rgb(35, 156, 232) solid;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.box1, .box2, .box3 {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+}
+.box3:hover {
+    background-color: rgb(35, 156, 232);
+}
+.box2:hover {
+    background-color: rgb(35, 156, 232);
+}
+.box1:hover {
+    background-color: rgb(35, 156, 232);
+}
+
+.icon1 {
+    background-color: aquamarine;
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(47, 217, 160);
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon2 {
+    background-color: white;
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon3 {
+    background-color: rgb(251, 201, 201);
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.hambuger{
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    nav > ul {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .hambuger {
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-text > h1 {
+        font-size: 30px;
+    }
+    .hero-text > h5 {
+        font-size: 16px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (min-width:768px ) and (max-width:1023px) {
+    nav > ul {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .hambuger {
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
